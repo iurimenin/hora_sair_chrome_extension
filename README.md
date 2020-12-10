@@ -8,4 +8,4 @@
 3 - Enable Developer Mode by clicking the toggle switch next to Developer mode.  
 4 - Click the LOAD UNPACKED button and select the extension directory.  
 
-![](https://developer.chrome.com/static/images/get_started/load_extension.png)
+![](https://wd.imgix.net/image/BrQidfK9jaQyIHwdw91aVpkPiib2/iYdLKFsJ1KSVGLhbLRvS.png?auto=format&w=1600)

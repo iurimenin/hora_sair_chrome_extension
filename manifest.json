@@ -16,17 +16,17 @@
   "page_action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "images/favicon-16x16.png",
-      "32": "images/favicon-32x32.png",
-      "48": "images/favicon-48x48.png",
-      "128": "images/favicon-120x120.png"
+      "16": "images/calendar_check_18dp.png",
+      "32": "images/calendar_check_36dp.png",
+      "48": "images/calendar_check_48dp.png",
+      "128": "images/calendar_check_48dp.png"
     }
   },
   "icons": {
-    "16": "images/favicon-16x16.png",
-    "32": "images/favicon-32x32.png",
-    "48": "images/favicon-48x48.png",
-    "128": "images/favicon-120x120.png"
+    "16": "images/calendar_check_18dp.png",
+    "32": "images/calendar_check_36dp.png",
+    "48": "images/calendar_check_48dp.png",
+    "128": "images/calendar_check_48dp.png"
   },
   "manifest_version": 2
 }

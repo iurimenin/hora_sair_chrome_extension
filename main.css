@@ -1,5 +1,6 @@
 .container {
     width: 300px;
+    padding: 20px;
 }
 
 div#current-changelog-container {
@@ -17,4 +18,13 @@ h1  {
     text-align: center;
     font-weight: bold;
     font-size: 30px;
+}
+
+#botao-sortear {
+    display: table;
+    margin: 0 auto;
+}
+
+.participante {
+    height: 30px;
 }

@@ -3,12 +3,41 @@
 
 <head>
     <link rel="stylesheet" media="all" href="bootstrap.css" />
+    <link rel="stylesheet" media="all" href="main.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 </head>
 
 <body>
     <div id="app">
-        
+        <div class="container">
+            <h1>Sorteador para a próxima diária</h1>
+            <div v-if="inicio">
+                <div class="row">
+                    <div class="col">
+                        <div id="botao-sortear">
+                            <button class="btn btn-success" @click="sortear()">Sortear participantes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div v-else>
+                <div class="mb-3 participante">
+                    <strong>Facilitador: </strong>{{ facilitador.nome }}
+                    <button class="btn btn-success btn-sm pull-right" @click="sortear('facilitador')"
+                        v-if="pessoas.length">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="participante">
+                    <strong>Secretário: </strong>{{ secretario.nome }}
+                    <button class="btn btn-success btn-sm pull-right" @click="sortear('secretario')"
+                        v-if="pessoas.length">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="vue.js"></script>
     <script src="popup.js"></script>

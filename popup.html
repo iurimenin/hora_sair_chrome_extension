@@ -11,30 +11,49 @@
 <body>
     <div id="app">
         <div class="container">
-            <h1>Sorteador para a próxima diária</h1>
+            <h1>Hora Sair</h1>
             <div v-if="inicio">
                 <div class="row">
                     <div class="col">
-                        <div id="botao-sortear">
-                            <button class="btn btn-success" @click="sortear()">Sortear participantes</button>
+                        <div class="col">
+                            <strong class="centralizar">Hora chegada:</strong>
+                        </div>
+                        <div class="col">
+                            <input class="input-color centralizar" type="time" id="horaChegada"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="col">
+                            <strong class="centralizar">Hora saída:</strong>
+                        </div>
+                        <div class="col">
+                            <input class="input-color centralizar" type="time" id="horaSaida"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="col">
+                            <strong class="centralizar">Hora Retorno:</strong>
+                        </div>
+                        <div class="col">
+                            <input class="input-color centralizar" type="time" id="horaRetorno"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" >
+                    <div class="col">
+                        <div class="centralizar">
+                            <button class="btn btn-success" @click="calcularSaida()">Calcular</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div v-else>
                 <div class="mb-3 participante">
-                    <strong>Facilitador: </strong>{{ facilitador.nome }}
-                    <button class="btn btn-success btn-sm pull-right" @click="sortear('facilitador')"
-                        v-if="pessoas.length">
-                        <i class="fa fa-refresh" aria-hidden="true"></i>
-                    </button>
-                </div>
-                <div class="participante">
-                    <strong>Secretário: </strong>{{ secretario.nome }}
-                    <button class="btn btn-success btn-sm pull-right" @click="sortear('secretario')"
-                        v-if="pessoas.length">
-                        <i class="fa fa-refresh" aria-hidden="true"></i>
-                    </button>
+                    <strong>Você pode sair às: </strong>{{ horaSaida }}
                 </div>
             </div>
         </div>

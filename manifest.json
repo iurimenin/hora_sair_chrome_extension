@@ -1,7 +1,7 @@
 {
-  "name": "Sorteador Diária - ProductLabs Trilha",
+  "name": "Hora sair - Ponto Mais Web",
   "version": "1.0",
-  "description": "Extensão para sortear o próximo facilitar e secretário da diária",
+  "description": "Extensão para calcular a hora que pode sair baseado nos pontos do ponto mais web.",
   "permissions": [
     "declarativeContent",
     "storage"

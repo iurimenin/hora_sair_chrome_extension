@@ -20,11 +20,15 @@ h1  {
     font-size: 30px;
 }
 
-#botao-sortear {
+.centralizar {
     display: table;
     margin: 0 auto;
 }
 
 .participante {
     height: 30px;
+}
+
+.row {
+    padding-top:10px;
 }
